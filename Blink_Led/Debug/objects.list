@@ -1,0 +1,7 @@
+"./Core/Src/main.o"
+"./Core/Src/printf_redirect.o"
+"./Core/Src/system_stm32f1xx.o"
+"./Peripheral/Src/gpio.o"
+"./Peripheral/Src/rcc.o"
+"./Peripheral/Src/uart.o"
+"./Startup/startup_stm32f103xb.o"

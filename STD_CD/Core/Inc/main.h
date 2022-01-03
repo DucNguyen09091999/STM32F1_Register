@@ -13,5 +13,6 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include "rcc.h"
+#include "uart.h"
 
 #endif /* INC_MAIN_H_ */

@@ -26,7 +26,10 @@ int main(void)
   rcc_HSE_Configuration();
   //Re-load value ARR =AHB/1000 = 72MHz/1000 = 72000
   rcc_Systick_Configuration(72000);
-
+  //Uart configuration
+  uart_UART1_GPIO_Configuration();
+  uart_UART1_Configuration();
+  printf("Programming is starting...\n");
   while(1)
   {
 

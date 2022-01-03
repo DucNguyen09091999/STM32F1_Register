@@ -5,13 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Peripheral/Src/rcc.c 
+../Peripheral/Src/rcc.c \
+../Peripheral/Src/uart.c 
 
 OBJS += \
-./Peripheral/Src/rcc.o 
+./Peripheral/Src/rcc.o \
+./Peripheral/Src/uart.o 
 
 C_DEPS += \
-./Peripheral/Src/rcc.d 
+./Peripheral/Src/rcc.d \
+./Peripheral/Src/uart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +24,7 @@ Peripheral/Src/%.o: ../Peripheral/Src/%.c Peripheral/Src/subdir.mk
 clean: clean-Peripheral-2f-Src
 
 clean-Peripheral-2f-Src:
-	-$(RM) ./Peripheral/Src/rcc.d ./Peripheral/Src/rcc.o
+	-$(RM) ./Peripheral/Src/rcc.d ./Peripheral/Src/rcc.o ./Peripheral/Src/uart.d ./Peripheral/Src/uart.o
 
 .PHONY: clean-Peripheral-2f-Src
 
