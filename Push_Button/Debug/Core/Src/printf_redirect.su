@@ -1,0 +1,2 @@
+printf_redirect.c:14:5:__io_putChar	24	static
+printf_redirect.c:22:5:_write	32	static

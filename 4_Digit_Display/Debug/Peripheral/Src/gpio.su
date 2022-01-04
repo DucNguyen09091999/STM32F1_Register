@@ -1,0 +1,5 @@
+gpio.c:15:6:gpio_LEDs_Configuration	4	static
+gpio.c:34:6:gpio_LEDs_WritePB13	16	static
+gpio.c:45:6:gpio_LEDs_WritePB14	16	static
+gpio.c:61:6:gpio_LEDs_TogglePB13	4	static
+gpio.c:65:6:gpio_LEDs_TogglePB14	4	static

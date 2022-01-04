@@ -1,0 +1,21 @@
+/*
+ * gpio.c
+ *
+ *  Created on: Jan 3, 2022
+ *      Author: Nguyen Chi Duc
+
+ */
+
+
+#include "gpio.h"
+
+/*
+ * @brief TM1637 LED display GPIO configuration
+ */
+void gpio_Tm1637_config(void)
+{
+	//CLK --> PB10
+	//DIO --> PB11
+	//Enable port B clock
+	RCC->APB2ENR |= RCC_APB2ENR_IOPBEN;
+}

@@ -1,0 +1,18 @@
+/*
+ * gpio.c
+ *
+ *  Created on: Jan 3, 2022
+ *      Author: Nguyen Chi Duc
+
+ */
+
+
+#include "gpio.h"
+
+/*
+ * @brief TM1637 LED display GPIO configuration
+ */
+void gpio_Tm1637_config(void)
+{
+
+}
