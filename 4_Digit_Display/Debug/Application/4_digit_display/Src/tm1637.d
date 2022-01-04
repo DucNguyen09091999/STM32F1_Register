@@ -9,7 +9,8 @@ Application/4_digit_display/Src/tm1637.o: \
  D:/Git_Temple/STM32_F1_Register/4_Digit_Display/CMSIS/Include/cmsis_gcc.h \
  D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Core/Inc/system_stm32f1xx.h \
  D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/rcc.h \
- D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/uart.h
+ D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/uart.h \
+ D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/gpio.h
 
 D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Application/4_digit_display/Inc/tm1637.h:
 
@@ -30,3 +31,5 @@ D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Core/Inc/system_stm32f1xx.h:
 D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/rcc.h:
 
 D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/uart.h:
+
+D:/Git_Temple/STM32_F1_Register/4_Digit_Display/Peripheral/Inc/gpio.h:

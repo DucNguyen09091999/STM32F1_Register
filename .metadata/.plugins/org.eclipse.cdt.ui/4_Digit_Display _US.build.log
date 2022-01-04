@@ -1,0 +1,20 @@
+15:35:16 **** Incremental Build of configuration Debug for project 4_Digit_Display _US ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/4_Digit_Display _US/CMSIS/Include" -I"D:/Git_Temple/STM32_F1_Register/4_Digit_Display _US/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/4_Digit_Display _US/Peripheral/Inc" -I"D:/Git_Temple/STM32_F1_Register/4_Digit_Display _US/Application/4_digit_display/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "4_Digit_Display _US.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Git_Temple\STM32_F1_Register\4_Digit_Display _US\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_Digit_Display _US.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4_Digit_Display _US.elf
+ 
+arm-none-eabi-size   4_Digit_Display\ _US.elf 
+arm-none-eabi-objdump -h -S  4_Digit_Display\ _US.elf  > "4_Digit_Display _US.list"
+arm-none-eabi-objcopy  -O binary  4_Digit_Display\ _US.elf  "4_Digit_Display _US.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7088	    120	   1608	   8816	   2270	4_Digit_Display _US.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4_Digit_Display _US.bin
+ 
+Finished building: 4_Digit_Display _US.list
+ 
+
+15:35:17 Build Finished. 0 errors, 0 warnings. (took 900ms)
+

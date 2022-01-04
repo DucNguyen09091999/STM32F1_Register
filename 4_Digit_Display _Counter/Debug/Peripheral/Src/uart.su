@@ -1,0 +1,3 @@
+uart.c:28:6:uart_UART1_GPIO_Configuration	4	static
+uart.c:54:6:uart_UART1_Configuration	4	static
+uart.c:96:6:uart_UART1_Transmit	24	static
