@@ -1,0 +1,10 @@
+20:24:26 **** Incremental Build of configuration Debug for project Sang_Dan ****
+make -j8 all 
+arm-none-eabi-size   Sang_Dan.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2020	      8	   1568	   3596	    e0c	Sang_Dan.elf
+Finished building: default.size.stdout
+ 
+
+20:24:27 Build Finished. 0 errors, 0 warnings. (took 321ms)
+

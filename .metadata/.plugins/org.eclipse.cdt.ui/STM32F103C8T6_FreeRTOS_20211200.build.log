@@ -1,0 +1,10 @@
+20:22:44 **** Incremental Build of configuration Debug for project STM32F103C8T6_FreeRTOS_20211200 ****
+make all 
+arm-none-eabi-size   STM32F103C8T6_FreeRTOS_20211200.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8792	     16	   9064	  17872	   45d0	STM32F103C8T6_FreeRTOS_20211200.elf
+Finished building: default.size.stdout
+ 
+
+20:22:44 Build Finished. 0 errors, 0 warnings. (took 289ms)
+

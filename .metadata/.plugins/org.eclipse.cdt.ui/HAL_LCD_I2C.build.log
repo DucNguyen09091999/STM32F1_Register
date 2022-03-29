@@ -1,0 +1,10 @@
+16:53:05 **** Incremental Build of configuration Debug for project HAL_LCD_I2C ****
+make -j8 all 
+arm-none-eabi-size   HAL_LCD_I2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8852	     36	   1660	  10548	   2934	HAL_LCD_I2C.elf
+Finished building: default.size.stdout
+ 
+
+16:53:05 Build Finished. 0 errors, 0 warnings. (took 348ms)
+

@@ -1,0 +1,176 @@
+19:07:26 **** Incremental Build of configuration Debug for project LCD ****
+make -j8 all 
+arm-none-eabi-gcc "../Peripheral/Src/gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/CMSIS/Include" -I"D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Peripheral/Src/gpio.d" -MT"Peripheral/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Peripheral/Src/gpio.o"
+arm-none-eabi-gcc "../Peripheral/Src/rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/CMSIS/Include" -I"D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Peripheral/Src/rcc.d" -MT"Peripheral/Src/rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Peripheral/Src/rcc.o"
+arm-none-eabi-gcc "../Peripheral/Src/uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/CMSIS/Include" -I"D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Peripheral/Src/uart.d" -MT"Peripheral/Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Peripheral/Src/uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/CMSIS/Include" -I"D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/printf_redirect.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/CMSIS/Include" -I"D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc" -I"D:/Git_Temple/STM32_F1_Register/LCD/Libraries" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/printf_redirect.d" -MT"Core/Src/printf_redirect.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/printf_redirect.o"
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:28,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/gpio.h:12,
+                 from ../Peripheral/Src/gpio.c:10:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:26:1: error: unknown type name 'class'
+   26 | class Print;
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:34:1: error: unknown type name 'class'
+   34 | class Printable
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/gpio.h:12,
+                 from ../Peripheral/Src/gpio.c:10:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:35:1: error: unknown type name 'class'
+   35 | class Print
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:36:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   36 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/gpio.h:12,
+                 from ../Peripheral/Src/gpio.c:10:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:1: error: unknown type name 'class'
+   55 | class LiquidCrystal_I2C : public Print {
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:28,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/uart.h:12,
+                 from ../Peripheral/Src/uart.c:12:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:26:1: error: unknown type name 'class'
+   26 | class Print;
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   55 | class LiquidCrystal_I2C : public Print {
+      |                         ^
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:34:1: error: unknown type name 'class'
+   34 | class Printable
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/uart.h:12,
+                 from ../Peripheral/Src/uart.c:12:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:35:1: error: unknown type name 'class'
+   35 | class Print
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:36:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   36 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:28,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/rcc.h:12,
+                 from ../Peripheral/Src/rcc.c:12:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:26:1: error: unknown type name 'class'
+   26 | class Print;
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:28,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from ../Core/Src/printf_redirect.c:10:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:26:1: error: unknown type name 'class'
+   26 | class Print;
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/uart.h:12,
+                 from ../Peripheral/Src/uart.c:12:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:1: error: unknown type name 'class'
+   55 | class LiquidCrystal_I2C : public Print {
+      | ^~~~~
+make: *** [Peripheral/Src/subdir.mk:25: Peripheral/Src/gpio.o] Error 1
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   55 | class LiquidCrystal_I2C : public Print {
+      |                         ^
+make: *** Waiting for unfinished jobs....
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:34:1: error: unknown type name 'class'
+   34 | class Printable
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:34:1: error: unknown type name 'class'
+   34 | class Printable
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:28,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from ../Core/Src/main.c:20:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:26:1: error: unknown type name 'class'
+   26 | class Print;
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | {
+      | ^
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:34:1: error: unknown type name 'class'
+   34 | class Printable
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Printable.h:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   35 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/rcc.h:12,
+                 from ../Peripheral/Src/rcc.c:12:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:35:1: error: unknown type name 'class'
+   35 | class Print
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from ../Core/Src/printf_redirect.c:10:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:35:1: error: unknown type name 'class'
+   35 | class Print
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:6,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from ../Core/Src/main.c:20:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:35:1: error: unknown type name 'class'
+   35 | class Print
+      | ^~~~~
+make: *** [Peripheral/Src/subdir.mk:25: Peripheral/Src/uart.o] Error 1
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:36:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   36 | {
+      | ^
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:36:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   36 | {
+      | ^
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/Print.h:36:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   36 | {
+      | ^
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from ../Core/Src/printf_redirect.c:10:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:1: error: unknown type name 'class'
+   55 | class LiquidCrystal_I2C : public Print {
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from D:/Git_Temple/STM32_F1_Register/LCD/Peripheral/Inc/rcc.h:12,
+                 from ../Peripheral/Src/rcc.c:12:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:1: error: unknown type name 'class'
+   55 | class LiquidCrystal_I2C : public Print {
+      | ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD/Core/Inc/main.h:17,
+                 from ../Core/Src/main.c:20:
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:1: error: unknown type name 'class'
+   55 | class LiquidCrystal_I2C : public Print {
+      | ^~~~~
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   55 | class LiquidCrystal_I2C : public Print {
+      |                         ^
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   55 | class LiquidCrystal_I2C : public Print {
+      |                         ^
+D:/Git_Temple/STM32_F1_Register/LCD/Libraries/LiquidCrystal_I2C.h:55:25: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   55 | class LiquidCrystal_I2C : public Print {
+      |                         ^
+make: *** [Peripheral/Src/subdir.mk:25: Peripheral/Src/rcc.o] Error 1
+make: *** [Core/Src/subdir.mk:25: Core/Src/printf_redirect.o] Error 1
+make: *** [Core/Src/subdir.mk:25: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+19:07:27 Build Failed. 41 errors, 0 warnings. (took 611ms)
+

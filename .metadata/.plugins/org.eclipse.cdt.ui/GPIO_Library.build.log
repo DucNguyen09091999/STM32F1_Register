@@ -1,0 +1,200 @@
+23:31:38 **** Build of configuration Debug for project GPIO_Library ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c8tx.d" -MT"Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Peripheral/Src/gpio_drv.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Peripheral/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Peripheral/Src/gpio_drv.d" -MT"Peripheral/Src/gpio_drv.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Peripheral/Src/gpio_drv.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Peripheral/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Peripheral/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc" -I"D:/Git_Temple/STM32_F1_Register/GPIO_Library/Peripheral/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+In file included from D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/main.h:12,
+                 from D:/Git_Temple/STM32_F1_Register/GPIO_Library/Peripheral/Inc/gpio_drv.h:11,
+                 from ../Peripheral/Src/gpio_drv.c:9:
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:146:3: error: unknown type name '__IO'
+  146 |   __IO uint32_t SR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:146:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'SR'
+  146 |   __IO uint32_t SR;
+      |                 ^~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:170:3: error: unknown type name '__IO'
+  170 |   __IO uint32_t SR;               /*!< ADC status register,    used for ADC multimode (bits common to several ADC instances). Address offset: ADC1 base address         */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:170:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'SR'
+  170 |   __IO uint32_t SR;               /*!< ADC status register,    used for ADC multimode (bits common to several ADC instances). Address offset: ADC1 base address         */
+      |                 ^~
+In file included from D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/main.h:12,
+                 from D:/Git_Temple/STM32_F1_Register/GPIO_Library/Peripheral/Inc/gpio_drv.h:11,
+                 from ../Peripheral/Src/gpio_drv.c:9:
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:184:3: error: unknown type name '__IO'
+  184 |   __IO uint32_t DR1;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:184:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'DR1'
+  184 |   __IO uint32_t DR1;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:205:3: error: unknown type name '__IO'
+  205 |   __IO uint32_t TIR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:205:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'TIR'
+  205 |   __IO uint32_t TIR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:217:3: error: unknown type name '__IO'
+  217 |   __IO uint32_t RIR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:217:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'RIR'
+  217 |   __IO uint32_t RIR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:229:3: error: unknown type name '__IO'
+  229 |   __IO uint32_t FR1;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:229:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'FR1'
+  229 |   __IO uint32_t FR1;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:239:3: error: unknown type name '__IO'
+  239 |   __IO uint32_t MCR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:239:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'MCR'
+  239 |   __IO uint32_t MCR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:269:3: error: unknown type name '__IO'
+  269 |   __IO uint32_t DR;           /*!< CRC Data register,                           Address offset: 0x00 */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:269:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'DR'
+  269 |   __IO uint32_t DR;           /*!< CRC Data register,                           Address offset: 0x00 */
+      |                 ^~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:283:3: error: unknown type name '__IO'
+  283 |   __IO uint32_t IDCODE;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:283:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'IDCODE'
+  283 |   __IO uint32_t IDCODE;
+      |                 ^~~~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:293:3: error: unknown type name '__IO'
+  293 |   __IO uint32_t CCR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:293:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CCR'
+  293 |   __IO uint32_t CCR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:301:3: error: unknown type name '__IO'
+  301 |   __IO uint32_t ISR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:301:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'ISR'
+  301 |   __IO uint32_t ISR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:313:3: error: unknown type name '__IO'
+  313 |   __IO uint32_t IMR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:313:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'IMR'
+  313 |   __IO uint32_t IMR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:327:3: error: unknown type name '__IO'
+  327 |   __IO uint32_t ACR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:327:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'ACR'
+  327 |   __IO uint32_t ACR;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:344:3: error: unknown type name '__IO'
+  344 |   __IO uint16_t RDP;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:344:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'RDP'
+  344 |   __IO uint16_t RDP;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:360:3: error: unknown type name '__IO'
+  360 |   __IO uint32_t CRL;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:360:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CRL'
+  360 |   __IO uint32_t CRL;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:375:3: error: unknown type name '__IO'
+  375 |   __IO uint32_t EVCR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:375:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'EVCR'
+  375 |   __IO uint32_t EVCR;
+      |                 ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:387:3: error: unknown type name '__IO'
+  387 |   __IO uint32_t CR1;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:387:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CR1'
+  387 |   __IO uint32_t CR1;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:404:3: error: unknown type name '__IO'
+  404 |   __IO uint32_t KR;           /*!< Key register,                                Address offset: 0x00 */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:404:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'KR'
+  404 |   __IO uint32_t KR;           /*!< Key register,                                Address offset: 0x00 */
+      |                 ^~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:416:3: error: unknown type name '__IO'
+  416 |   __IO uint32_t CR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:416:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CR'
+  416 |   __IO uint32_t CR;
+      |                 ^~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:426:3: error: unknown type name '__IO'
+  426 |   __IO uint32_t CR;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:426:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CR'
+  426 |   __IO uint32_t CR;
+      |                 ^~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:446:3: error: unknown type name '__IO'
+  446 |   __IO uint32_t CRH;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:446:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CRH'
+  446 |   __IO uint32_t CRH;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:464:3: error: unknown type name '__IO'
+  464 |   __IO uint32_t CR1;
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:464:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CR1'
+  464 |   __IO uint32_t CR1;
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:479:3: error: unknown type name '__IO'
+  479 |   __IO uint32_t CR1;             /*!< TIM control register 1,                      Address offset: 0x00 */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:479:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CR1'
+  479 |   __IO uint32_t CR1;             /*!< TIM control register 1,                      Address offset: 0x00 */
+      |                 ^~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:509:3: error: unknown type name '__IO'
+  509 |   __IO uint32_t SR;         /*!< USART Status register,                   Address offset: 0x00 */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:509:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'SR'
+  509 |   __IO uint32_t SR;         /*!< USART Status register,                   Address offset: 0x00 */
+      |                 ^~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:524:3: error: unknown type name '__IO'
+  524 |   __IO uint16_t EP0R;                 /*!< USB Endpoint 0 register,                   Address offset: 0x00 */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:524:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'EP0R'
+  524 |   __IO uint16_t EP0R;                 /*!< USB Endpoint 0 register,                   Address offset: 0x00 */
+      |                 ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:559:3: error: unknown type name '__IO'
+  559 |   __IO uint32_t CR;   /*!< WWDG Control register,       Address offset: 0x00 */
+      |   ^~~~
+D:/Git_Temple/STM32_F1_Register/GPIO_Library/Core/Inc/stm32f103xb.h:559:17: error: expected ':', ',', ';', '}' or '__attribute__' before 'CR'
+  559 |   __IO uint32_t CR;   /*!< WWDG Control register,       Address offset: 0x00 */
+      |                 ^~
+../Peripheral/Src/gpio_drv.c: In function 'GPIO_Init':
+../Peripheral/Src/gpio_drv.c:23:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   23 |  if(Port = 1)
+      |     ^~~~
+../Peripheral/Src/gpio_drv.c:25:15: error: lvalue required as left operand of assignment
+   25 |   RCC_APB2ENR |= 0x04UL;//Enable clock for PORTA
+      |               ^~
+../Peripheral/Src/gpio_drv.c:26:35: error: invalid type argument of unary '*' (have 'long unsigned int')
+   26 |   CR = (volatile unsigned long *)(*GPIOA_BASE + offset);
+../Peripheral/Src/gpio_drv.c:28:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   28 |  else if(Port = 2)
+      |          ^~~~
+../Peripheral/Src/gpio_drv.c:30:15: error: lvalue required as left operand of assignment
+   30 |   RCC_APB2ENR |= 0x08UL;//Enable clock for PORTB
+      |               ^~
+../Peripheral/Src/gpio_drv.c:31:35: error: invalid type argument of unary '*' (have 'long unsigned int')
+   31 |   CR = (volatile unsigned long *)(*GPIOB_BASE + offset);
+../Peripheral/Src/gpio_drv.c:33:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   33 |  else if(Port = 3)
+      |          ^~~~
+../Peripheral/Src/gpio_drv.c:35:15: error: lvalue required as left operand of assignment
+   35 |   RCC_APB2ENR |= 0x10UL;//Enable clock for PORTC
+      |               ^~
+../Peripheral/Src/gpio_drv.c:36:35: error: invalid type argument of unary '*' (have 'long unsigned int')
+   36 |   CR = (volatile unsigned long *)(*GPIOC_BASE + offset);
+make: *** [Peripheral/Src/subdir.mk:19: Peripheral/Src/gpio_drv.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+23:31:39 Build Failed. 60 errors, 3 warnings. (took 420ms)
+

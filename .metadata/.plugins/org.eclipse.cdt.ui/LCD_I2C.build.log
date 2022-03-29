@@ -1,0 +1,29 @@
+19:37:02 **** Incremental Build of configuration Debug for project LCD_I2C ****
+make -j8 all 
+arm-none-eabi-g++ "../libraries/LiquidCrystal_I2C.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I"D:/Git_Temple/STM32_F1_Register/LCD_I2C/libraries" -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"libraries/LiquidCrystal_I2C.d" -MT"libraries/LiquidCrystal_I2C.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "libraries/LiquidCrystal_I2C.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I"D:/Git_Temple/STM32_F1_Register/LCD_I2C/libraries" -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../libraries/LiquidCrystal_I2C.cpp:3:
+../libraries/LiquidCrystal_I2C.h:84:16: error: conflicting return type specified for 'virtual void LiquidCrystal_I2C::write(uint8_t)'
+   84 |   virtual void write(uint8_t);
+      |                ^~~~~
+In file included from ../libraries/LiquidCrystal_I2C.h:6,
+                 from ../libraries/LiquidCrystal_I2C.cpp:3:
+../libraries/Print.h:49:20: note: overridden function is 'virtual size_t Print::write(uint8_t)'
+   49 |     virtual size_t write(uint8_t)= 0;
+      |                    ^~~~~
+make: *** [libraries/subdir.mk:35: libraries/LiquidCrystal_I2C.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.cpp:21:
+D:/Git_Temple/STM32_F1_Register/LCD_I2C/libraries/LiquidCrystal_I2C.h:84:16: error: conflicting return type specified for 'virtual void LiquidCrystal_I2C::write(uint8_t)'
+   84 |   virtual void write(uint8_t);
+      |                ^~~~~
+In file included from D:/Git_Temple/STM32_F1_Register/LCD_I2C/libraries/LiquidCrystal_I2C.h:6,
+                 from ../Core/Src/main.cpp:21:
+D:/Git_Temple/STM32_F1_Register/LCD_I2C/libraries/Print.h:49:20: note: overridden function is 'virtual size_t Print::write(uint8_t)'
+   49 |     virtual size_t write(uint8_t)= 0;
+      |                    ^~~~~
+make: *** [Core/Src/subdir.mk:38: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+19:37:02 Build Failed. 5 errors, 0 warnings. (took 463ms)
+
